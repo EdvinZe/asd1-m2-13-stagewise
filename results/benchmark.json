@@ -1,0 +1,81 @@
+{
+  "executedAt": "2026-11-19T19:53:39.801Z",
+  "seed": 13013,
+  "generator": "LCG 1664525*x + 1013904223 modulo 2^32",
+  "results": [
+    {
+      "size": 10,
+      "kind": "uporządkowane",
+      "comparisons": 9,
+      "matchesReference": true
+    },
+    {
+      "size": 10,
+      "kind": "odwrócone",
+      "comparisons": 45,
+      "matchesReference": true
+    },
+    {
+      "size": 10,
+      "kind": "pseudolosowe",
+      "comparisons": 26,
+      "matchesReference": true
+    },
+    {
+      "size": 100,
+      "kind": "uporządkowane",
+      "comparisons": 99,
+      "matchesReference": true
+    },
+    {
+      "size": 100,
+      "kind": "odwrócone",
+      "comparisons": 4950,
+      "matchesReference": true
+    },
+    {
+      "size": 100,
+      "kind": "pseudolosowe",
+      "comparisons": 2505,
+      "matchesReference": true
+    },
+    {
+      "size": 1000,
+      "kind": "uporządkowane",
+      "comparisons": 999,
+      "matchesReference": true
+    },
+    {
+      "size": 1000,
+      "kind": "odwrócone",
+      "comparisons": 499500,
+      "matchesReference": true
+    },
+    {
+      "size": 1000,
+      "kind": "pseudolosowe",
+      "comparisons": 252410,
+      "matchesReference": true
+    }
+  ],
+  "search": [
+    {
+      "size": 10,
+      "first": 1,
+      "last": 10,
+      "missing": 10
+    },
+    {
+      "size": 100,
+      "first": 1,
+      "last": 100,
+      "missing": 100
+    },
+    {
+      "size": 1000,
+      "first": 1,
+      "last": 1000,
+      "missing": 1000
+    }
+  ]
+}

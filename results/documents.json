@@ -1,0 +1,181 @@
+{
+  "executedAt": "2026-11-19T20:07:57.658Z",
+  "documents": [
+    {
+      "file": "docs/documentation.pdf",
+      "pages": 10,
+      "bytes": 392591,
+      "layout": [
+        {
+          "page": 1,
+          "fits": true,
+          "contentBottom": 777,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 2,
+          "fits": true,
+          "contentBottom": 918,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 3,
+          "fits": true,
+          "contentBottom": 850,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 4,
+          "fits": true,
+          "contentBottom": 914,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 5,
+          "fits": true,
+          "contentBottom": 964,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 6,
+          "fits": true,
+          "contentBottom": 1038,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 7,
+          "fits": true,
+          "contentBottom": 988,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 8,
+          "fits": true,
+          "contentBottom": 1040,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 9,
+          "fits": true,
+          "contentBottom": 944,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 10,
+          "fits": true,
+          "contentBottom": 974,
+          "footerTop": 1053,
+          "scrollFits": true,
+          "horizontal": true
+        }
+      ]
+    },
+    {
+      "file": "presentation/presentation.pdf",
+      "pages": 10,
+      "bytes": 255389,
+      "layout": [
+        {
+          "page": 1,
+          "fits": true,
+          "contentBottom": 489,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 2,
+          "fits": true,
+          "contentBottom": 570,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 3,
+          "fits": true,
+          "contentBottom": 503,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 4,
+          "fits": true,
+          "contentBottom": 566,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 5,
+          "fits": true,
+          "contentBottom": 526,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 6,
+          "fits": true,
+          "contentBottom": 497,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 7,
+          "fits": true,
+          "contentBottom": 587,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 8,
+          "fits": true,
+          "contentBottom": 625,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 9,
+          "fits": true,
+          "contentBottom": 436,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        },
+        {
+          "page": 10,
+          "fits": true,
+          "contentBottom": 605,
+          "footerTop": 667,
+          "scrollFits": true,
+          "horizontal": true
+        }
+      ]
+    }
+  ],
+  "presentationNavigation": "PASS",
+  "narrowViewport": "PASS"
+}

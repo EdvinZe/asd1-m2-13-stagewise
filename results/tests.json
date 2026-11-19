@@ -1,0 +1,223 @@
+{
+  "executedAt": "2026-11-19T20:08:31.340Z",
+  "total": 36,
+  "passed": 36,
+  "results": [
+    {
+      "name": "Przykład kontrolny A",
+      "input": "[60,180,60] → [70,200,50]",
+      "expected": "300, 320, [+10,+20,−10], 40; treść,wstęp,zakończenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Przykład kontrolny B i zwycięzca",
+      "input": "[60,185,55]",
+      "expected": "300, [0,+5,−5], 10; B lepsza o 30",
+      "status": "PASS"
+    },
+    {
+      "name": "Odrzucenie niekompletnej próby",
+      "input": "brak P-KONIEC",
+      "expected": "wyjątek, stan niezmieniony",
+      "status": "PASS"
+    },
+    {
+      "name": "Dokładna zgodność",
+      "input": "[60,180,60]",
+      "expected": "Σ|Δ|=0, Δtotal=0",
+      "status": "PASS"
+    },
+    {
+      "name": "Przeciwne odchylenia",
+      "input": "[80,160,60]",
+      "expected": "Δtotal=0, Σ|Δ|=40",
+      "status": "PASS"
+    },
+    {
+      "name": "Remis części rozstrzyga kolejność",
+      "input": "moduły 10,20,10",
+      "expected": "[2,1,3]",
+      "status": "PASS"
+    },
+    {
+      "name": "Remis prób nie ma zwycięzcy",
+      "input": "A vs kopia A o innym ID",
+      "expected": "winnerId=null, różnica=0",
+      "status": "PASS"
+    },
+    {
+      "name": "Pusty zestaw",
+      "input": "[]",
+      "expected": "poprawny zbiór, sortowanie [], wyszukiwanie 0",
+      "status": "PASS"
+    },
+    {
+      "name": "Eksport/import odtwarza dane",
+      "input": "scenariusz kontrolny",
+      "expected": "identyczne dane, Σ|Δ|=40",
+      "status": "PASS"
+    },
+    {
+      "name": "Błędny JSON nie nadpisuje stanu",
+      "input": "\"{broken\"",
+      "expected": "wyjątek i identyczny zapis",
+      "status": "PASS"
+    },
+    {
+      "name": "Błędna wersja pliku",
+      "input": "version=2",
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Granice czasów poprawne",
+      "input": "plan:1,3600; wykonanie:0,7200",
+      "expected": "akceptacja",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawny plan 0",
+      "input": 0,
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawny plan 3601",
+      "input": 3601,
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawny plan 1.5",
+      "input": 1.5,
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawny plan \"60\"",
+      "input": "60",
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawny plan null",
+      "input": null,
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawne wykonanie -1",
+      "input": -1,
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawne wykonanie 7201",
+      "input": 7201,
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawne wykonanie 1.5",
+      "input": 1.5,
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawne wykonanie \"70\"",
+      "input": "70",
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawne wykonanie null",
+      "input": null,
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Powtórzone i puste ID",
+      "input": "A,A / pusty identyfikator",
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawna relacja i kolejność",
+      "input": "brak wystąpienia / powtórzone order",
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Dodatkowy czas nieznanej części",
+      "input": "extra:1",
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "ID i numer istniejącej próby niezmienne",
+      "input": "edycja numeru A z 1 na 5",
+      "expected": "odrzucenie",
+      "status": "PASS"
+    },
+    {
+      "name": "Zmiana planu chroni próby",
+      "input": "zmiana 60 na 65 bez zgody",
+      "expected": "odrzucenie bez zmian",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawna transakcja jest atomowa",
+      "input": "zmiana tytułu i niepoprawny plan",
+      "expected": "oryginalny tytuł, plan i próby zachowane",
+      "status": "PASS"
+    },
+    {
+      "name": "Edycja próby aktualizuje wynik",
+      "input": "B: wstęp 60→90",
+      "expected": "Σ|Δ|=40, zachowane ID i numer",
+      "status": "PASS"
+    },
+    {
+      "name": "Wyszukiwanie: początek, koniec, brak",
+      "input": "[A,B], szukane A/B/X",
+      "expected": "liczniki 1/2/2",
+      "status": "PASS"
+    },
+    {
+      "name": "Sortowanie: uporządkowane, odwrotne, remisy",
+      "input": "3 zbiory, niezależny Array.sort",
+      "expected": "ten sam wynik, brak mutacji wejścia",
+      "status": "PASS"
+    },
+    {
+      "name": "Dokładne liczniki sortowania",
+      "input": "n=10: uporządkowane i odwrócone",
+      "expected": "9 / 45",
+      "status": "PASS"
+    },
+    {
+      "name": "Rzeczywisty stan pośredni",
+      "input": "ranking próby A",
+      "expected": "pierwszy krok: przesunięcie WSTĘP, 2 porównania",
+      "status": "PASS"
+    },
+    {
+      "name": "Stoper: start, pauza, wznowienie, limit",
+      "input": "zegar deterministyczny",
+      "expected": "2s; pauza 2s; wznowienie 3s; limit 7200",
+      "status": "PASS"
+    },
+    {
+      "name": "Tekst HTML pozostaje danymi",
+      "input": "<img src=x onerror=alert(1)>",
+      "expected": "zachowany tekst, bez ewaluacji",
+      "status": "PASS"
+    },
+    {
+      "name": "Duży scenariusz i limit rekordów",
+      "input": "1000 części i 1000 prób, następnie 1001",
+      "expected": "1000 akceptowane; 1001 odrzucone",
+      "status": "PASS"
+    }
+  ]
+}

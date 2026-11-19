@@ -1,0 +1,16 @@
+{
+  "name": "asd1-m2-13-stagewise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline public speaking trainer — ASD1-M2-13",
+  "scripts": {
+    "test": "node tests/run.cjs",
+    "benchmark": "node tools/benchmark.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "docs": "python3 tools/build_docs.py && node tools/export_pdf.cjs"
+  },
+  "devDependencies": {
+    "pdf-lib": "1.17.1",
+    "playwright": "1.65.1"
+  }
+}

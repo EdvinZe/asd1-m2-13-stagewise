@@ -1,0 +1,57 @@
+{
+  "format": "stagewise",
+  "version": 1,
+  "speeches": [
+    {
+      "id": "S-KONTROLA",
+      "title": "Granice: minimum, maksimum i zero"
+    }
+  ],
+  "parts": [
+    {
+      "id": "P-WSTEP",
+      "speechId": "S-KONTROLA",
+      "order": 1,
+      "name": "Wstęp",
+      "plannedSeconds": 1
+    },
+    {
+      "id": "P-TRESC",
+      "speechId": "S-KONTROLA",
+      "order": 2,
+      "name": "Treść",
+      "plannedSeconds": 3600
+    },
+    {
+      "id": "P-KONIEC",
+      "speechId": "S-KONTROLA",
+      "order": 3,
+      "name": "Zakończenie",
+      "plannedSeconds": 60
+    }
+  ],
+  "trials": [
+    {
+      "id": "A",
+      "speechId": "S-KONTROLA",
+      "number": 1,
+      "actualSeconds": {
+        "P-WSTEP": 0,
+        "P-TRESC": 7200,
+        "P-KONIEC": 60
+      },
+      "note": "Poprawne wartości graniczne: 0 i 7200 sekund."
+    },
+    {
+      "id": "B",
+      "speechId": "S-KONTROLA",
+      "number": 2,
+      "actualSeconds": {
+        "P-WSTEP": 1,
+        "P-TRESC": 3600,
+        "P-KONIEC": 60
+      },
+      "note": "Próba idealna: suma odchyleń bezwzględnych = 0."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#14151a" />
+    <title>Stagewise — Trener wystąpień publicznych</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="app/styles.css" />
+    <script defer src="app/algorithms.js"></script>
+    <script defer src="app/model.js"></script>
+    <script defer src="app/scenarios.js"></script>
+    <script defer src="app/storage.js"></script>
+    <script defer src="app/benchmarks.js"></script>
+    <script defer src="app/timer.js"></script>
+    <script defer src="app/views.js"></script>
+    <script defer src="app/ui.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Przejdź do treści</a>
+    <aside class="sidebar">
+      <a class="brand" data-view="overview" href="#overview" aria-label="Stagewise — pulpit"
+        ><img src="assets/mark.svg" alt="" width="42" height="42" /><span
+          >stagewise<span class="brand-dot">.</span></span
+        ></a
+      >
+      <div class="affiliation">
+        <img src="assets/uwb-vilnius.png" alt="Filia UwB w Wilnie" /><span
+          >PROJEKT STUDENCKI · ASD I</span
+        >
+      </div>
+      <div class="workspace-label">TWOJE STUDIO</div>
+      <nav aria-label="Główna nawigacja">
+        <button data-view="overview" class="nav active">
+          <span aria-hidden="true">◫</span> Pulpit
+        </button>
+        <button data-view="plan" class="nav">
+          <span aria-hidden="true">☷</span> Plan wystąpienia
+        </button>
+        <button data-view="practice" class="nav">
+          <span aria-hidden="true">◉</span> Nowa próba
+        </button>
+        <button data-view="history" class="nav">
+          <span aria-hidden="true">◷</span> Historia prób
+        </button>
+        <button data-view="compare" class="nav">
+          <span aria-hidden="true">⇄</span> Porównanie
+        </button>
+        <button data-view="lab" class="nav">
+          <span aria-hidden="true">⌘</span> Laboratorium ASD
+        </button>
+      </nav>
+      <div class="sidebar-tip">
+        <img src="assets/mark.svg" alt="" width="28" height="28" /><strong
+          >Małe próby. Duży postęp.</strong
+        >
+        <p>Ćwicz świadomie. Dobry czas to także dobre proporcje.</p>
+        <button class="text-button" data-action="scenario" data-kind="control">
+          Otwórz przykład kontrolny ↗
+        </button>
+      </div>
+      <div class="sidebar-bottom">
+        <span class="online-dot"></span> Offline. W Twojej przeglądarce.<br /><small
+          >ASD I · M2 · 2026/2027</small
+        >
+      </div>
+    </aside>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="breadcrumb">Studio <span>/</span> <strong id="page-name">Pulpit</strong></div>
+        <div class="header-actions">
+          <button class="button ghost small" data-action="export">↓ Eksport JSON</button
+          ><button class="button ghost small" data-action="import">↑ Import JSON</button
+          ><img
+            class="university-seal"
+            src="assets/uwb-seal.png"
+            alt="Herb Uniwersytetu w Białymstoku"
+          /><span class="avatar" title="Edvin Zenevič">EZ</span>
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">TRENER WYSTĄPIEŃ PUBLICZNYCH</p>
+            <h1 id="heading">Twoja kolej na dobry występ.</h1>
+            <p id="subheading" class="muted">Zaplanuj. Przećwicz. Zobacz, co poprawić.</p>
+          </div>
+          <button class="button primary" data-view="practice">+ Rozpocznij próbę</button>
+        </div>
+        <div class="speech-toolbar">
+          <label for="speech-select">Wystąpienie</label
+          ><select id="speech-select" aria-label="Aktywne wystąpienie"></select
+          ><button class="text-button" data-action="new-speech">+ Nowe wystąpienie</button
+          ><span class="badge">Tylko kompletne próby</span>
+        </div>
+        <div id="feedback" role="status" aria-live="polite" hidden></div>
+        <section id="content" aria-label="Obszar roboczy"></section>
+        <footer class="app-footer">
+          <div class="footer-brand">
+            <img src="assets/mark.svg" alt="" width="21" height="21" />stagewise.
+          </div>
+          <span>Twój głos. Twoje tempo.</span>
+          <div class="footer-affiliation">
+            <img src="assets/uwb-vilnius.png" alt="Filia UwB w Wilnie" />
+          </div>
+          <a href="docs/documentation.pdf">Dokumentacja ↗</a
+          ><a href="presentation/presentation.html">Prezentacja ↗</a>
+        </footer>
+      </main>
+    </div>
+    <input id="import-file" type="file" accept="application/json,.json" hidden />
+    <dialog id="confirm-dialog">
+      <form method="dialog">
+        <p class="eyebrow">ZANIM PRZEJDZIESZ DALEJ</p>
+        <h2 id="dialog-title">Potwierdź zmianę</h2>
+        <p id="dialog-message"></p>
+        <div class="actions">
+          <button class="button ghost" value="cancel">Anuluj</button
+          ><button class="button primary" value="confirm" id="confirm-button">Potwierdzam</button>
+        </div>
+      </form>
+    </dialog>
+    <noscript
+      >Aplikacja wymaga włączonego JavaScript. Wszystkie pliki działają lokalnie, bez
+      internetu.</noscript
+    >
+  </body>
+</html>

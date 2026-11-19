@@ -1,0 +1,37 @@
+PASS Przykład kontrolny A
+PASS Przykład kontrolny B i zwycięzca
+PASS Odrzucenie niekompletnej próby
+PASS Dokładna zgodność
+PASS Przeciwne odchylenia
+PASS Remis części rozstrzyga kolejność
+PASS Remis prób nie ma zwycięzcy
+PASS Pusty zestaw
+PASS Eksport/import odtwarza dane
+PASS Błędny JSON nie nadpisuje stanu
+PASS Błędna wersja pliku
+PASS Granice czasów poprawne
+PASS Niepoprawny plan 0
+PASS Niepoprawny plan 3601
+PASS Niepoprawny plan 1.5
+PASS Niepoprawny plan "60"
+PASS Niepoprawny plan null
+PASS Niepoprawne wykonanie -1
+PASS Niepoprawne wykonanie 7201
+PASS Niepoprawne wykonanie 1.5
+PASS Niepoprawne wykonanie "70"
+PASS Niepoprawne wykonanie null
+PASS Powtórzone i puste ID
+PASS Niepoprawna relacja i kolejność
+PASS Dodatkowy czas nieznanej części
+PASS ID i numer istniejącej próby niezmienne
+PASS Zmiana planu chroni próby
+PASS Niepoprawna transakcja jest atomowa
+PASS Edycja próby aktualizuje wynik
+PASS Wyszukiwanie: początek, koniec, brak
+PASS Sortowanie: uporządkowane, odwrotne, remisy
+PASS Dokładne liczniki sortowania
+PASS Rzeczywisty stan pośredni
+PASS Stoper: start, pauza, wznowienie, limit
+PASS Tekst HTML pozostaje danymi
+PASS Duży scenariusz i limit rekordów
+36/36 PASS

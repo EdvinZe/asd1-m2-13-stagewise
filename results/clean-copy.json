@@ -1,0 +1,14 @@
+{
+  "root": "/tmp/stagewise-m2-clean-20261119",
+  "requiredFiles": 18,
+  "pdfPages": {
+    "docs/documentation.pdf": 10,
+    "presentation/presentation.pdf": 10
+  },
+  "localApp": "PASS",
+  "logos": "PASS",
+  "comparison": "PASS",
+  "slideNavigation": "PASS",
+  "errors": [],
+  "networkRequests": []
+}

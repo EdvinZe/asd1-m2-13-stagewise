@@ -1,0 +1,57 @@
+{
+  "format": "stagewise",
+  "version": 1,
+  "speeches": [
+    {
+      "id": "S-KONTROLA",
+      "title": "Moje pierwsze wystąpienie"
+    }
+  ],
+  "parts": [
+    {
+      "id": "P-WSTEP",
+      "speechId": "S-KONTROLA",
+      "order": 1,
+      "name": "Wstęp",
+      "plannedSeconds": 60
+    },
+    {
+      "id": "P-TRESC",
+      "speechId": "S-KONTROLA",
+      "order": 2,
+      "name": "Treść",
+      "plannedSeconds": 180
+    },
+    {
+      "id": "P-KONIEC",
+      "speechId": "S-KONTROLA",
+      "order": 3,
+      "name": "Zakończenie",
+      "plannedSeconds": 60
+    }
+  ],
+  "trials": [
+    {
+      "id": "A",
+      "speechId": "S-KONTROLA",
+      "number": 1,
+      "actualSeconds": {
+        "P-WSTEP": 70,
+        "P-TRESC": 200,
+        "P-KONIEC": 50
+      },
+      "note": "Za dużo szczegółów w rozwinięciu. Zakończenie zbyt szybkie."
+    },
+    {
+      "id": "B",
+      "speechId": "S-KONTROLA",
+      "number": 2,
+      "actualSeconds": {
+        "P-WSTEP": 60,
+        "P-TRESC": 185,
+        "P-KONIEC": 55
+      },
+      "note": "Lepsze tempo. Zostawić 5 sekund więcej na podsumowanie."
+    }
+  ]
+}

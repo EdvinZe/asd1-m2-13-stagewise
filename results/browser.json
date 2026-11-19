@@ -1,0 +1,101 @@
+{
+  "executedAt": "2026-11-19T20:07:25.551Z",
+  "total": 23,
+  "passed": 23,
+  "errors": [],
+  "networkRequests": [],
+  "results": [
+    {
+      "name": "file://, brak sieci, kontrolny pulpit",
+      "status": "PASS"
+    },
+    {
+      "name": "Kontrolne porównanie A/B",
+      "status": "PASS"
+    },
+    {
+      "name": "Remis: ta sama próba",
+      "status": "PASS"
+    },
+    {
+      "name": "Wyszukiwanie i rzeczywisty ślad",
+      "status": "PASS"
+    },
+    {
+      "name": "Niekompletny formularz blokuje zapis",
+      "status": "PASS"
+    },
+    {
+      "name": "Rzeczywisty stoper: start, stop, wznowienie, reset",
+      "status": "PASS"
+    },
+    {
+      "name": "Ręczny zapis kompletnej próby i notatki",
+      "status": "PASS"
+    },
+    {
+      "name": "Edycja przelicza aktualne wyniki",
+      "status": "PASS"
+    },
+    {
+      "name": "Niepoprawny import zachowuje zapis",
+      "status": "PASS"
+    },
+    {
+      "name": "Poprawny import anulowany nie zmienia danych",
+      "status": "PASS"
+    },
+    {
+      "name": "Poprawny import po potwierdzeniu",
+      "status": "PASS"
+    },
+    {
+      "name": "Eksport JSON: poprawna wersja i dane",
+      "status": "PASS"
+    },
+    {
+      "name": "Zmiana planu: anulowanie zachowuje historię",
+      "status": "PASS"
+    },
+    {
+      "name": "Zmiana planu: potwierdzenie czyści stare próby",
+      "status": "PASS"
+    },
+    {
+      "name": "Nowy plan, klawiatura, dodanie, kolejność, usunięcie",
+      "status": "PASS"
+    },
+    {
+      "name": "Anulowana zmiana wystąpienia zachowuje roboczy plan",
+      "status": "PASS"
+    },
+    {
+      "name": "HTML użytkownika nie jest wykonywany",
+      "status": "PASS"
+    },
+    {
+      "name": "Pusta lista: czytelne widoki bez błędów",
+      "status": "PASS"
+    },
+    {
+      "name": "Ponowne otwarcie odtwarza dane lokalne",
+      "status": "PASS"
+    },
+    {
+      "name": "Responsywność 390 i 768 px we wszystkich widokach",
+      "status": "PASS"
+    },
+    {
+      "name": "Scenariusz kontrolny przyciskiem i anulowanie",
+      "status": "PASS"
+    },
+    {
+      "name": "Duży zestaw: 1000 części i 1000 prób w UI",
+      "status": "PASS"
+    },
+    {
+      "name": "Brak błędów JavaScript i żądań sieciowych",
+      "status": "PASS"
+    }
+  ]
+}
